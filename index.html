@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi gestor de finanzas</title>
+    <!--CONEXION AL ARCHIVO CSS-->
+    <link rel="stylesheet"href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<h1>Control de Gastos Personales</h1>
+<p>¡Bienvenido Aplicacion de Finanzas!</p>
+
+<!--formulario para agregar datos  -->
+<div>
+    <input type="text" id="concepto" placeholder="Ej.Almuerzo, Transporte">
+    <input type="number" id="monto" placeholder="Monto $">
+    <button id="btn-agregar">Agregar Gasto</button>
+</div>
+<!--lista donde se mostraran los gastos-->
+<h2>Mis Movimientos</h2>
+<ul id="lista-gastos"></ul>
+
+<!--nueva seccion para nmostrar el total de gastos-->
+<h3>Total Acumulado: $<span id="total-gastos">0</span></h3>
+
+
+
+</body>
+</html>
